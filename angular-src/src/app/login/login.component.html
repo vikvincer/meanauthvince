@@ -1,0 +1,28 @@
+<div *ngIf="alertMsg">
+  <div class="errorMsg">{{alertMsg}}</div>
+</div>
+<div *ngIf="alertMsgSuccess">
+  <div class="errorMsgSuccess">{{alertMsgSuccess}}</div>
+</div>
+
+<form class="form-horizontal"  #form="ngForm" (submit)="onLoginSubmit(form.value)">
+  <fieldset>
+    <legend>Login</legend>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">Username</label>
+      <div class="col-lg-10">
+        <input type="text" name="username" [(ngModel)]="username" class="form-control" placeholder="Username">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">Password</label>
+      <div class="col-lg-10">
+        <input type="password" name="password" [(ngModel)]="password" class="form-control" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="reset" class="btn btn-warning" value="Reset">
+     <input type="submit" class="btn btn-primary" value="Login">
+    </div>
+    </fieldset>
+</form>
