@@ -5,8 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RegisterComponent } from './register/register.component';
-import { ProfileComponent } from './profile/profile.component';
 import { AuthGuard } from './guards/auth.guard';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const appRoutes:Routes = [
