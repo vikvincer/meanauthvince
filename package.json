@@ -1,17 +1,23 @@
 {
-  "name": "kingmathtutornode",
+  "name": "authapp",
   "version": "1.0.0",
-  "description": "king tutor app",
+  "description": "authentication app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error:no test specified\" && exit 1",
+    "start": "node app"
   },
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "cors": "^2.8.4",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
     "express": "*",
-    "nodemon": "^1.11.0"
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "nodemon": "^1.11.0",
+    "passport": "*",
+    "passport-jwt": "*"
   },
-  "author": "vik vince ridon III",
+  "author": "vince",
   "license": "ISC"
 }
